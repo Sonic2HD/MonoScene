@@ -82,6 +82,11 @@ namespace Microsoft.Xna.Framework.Graphics
             _Projection = projectionMatrix;
         }
 
+        public void SetViewMatrix(Matrix viewMatrix)
+        {
+            _View = viewMatrix;
+        }
+
         public void SetCamera(Matrix cameraMatrix)
         {
             _View = Matrix.Invert(cameraMatrix);

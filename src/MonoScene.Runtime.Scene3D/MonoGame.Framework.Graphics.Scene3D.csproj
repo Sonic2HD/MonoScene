@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.1825-develop" PrivateAssets="all" />
     <PackageReference Include="System.Memory" Version="4.5.4" />
   </ItemGroup>
 
@@ -16,8 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MonoGame.Framework.Graphics.PBR\MonoGame.Framework.Graphics.EffectsPBR.csproj" />
-    <ProjectReference Include="..\MonoGame.Framework.Graphics.Toolkit3D\MonoGame.Framework.Graphics.Model3D.csproj" />
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.DesktopGL.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Effects.PBR\MonoScene.Runtime.Effects.PBR.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Model3D\MonoScene.Runtime.Model3D.csproj" />
   </ItemGroup>
 
 </Project>

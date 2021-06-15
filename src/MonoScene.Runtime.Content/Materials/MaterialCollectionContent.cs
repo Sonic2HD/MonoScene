@@ -8,9 +8,9 @@ namespace MonoScene.Graphics.Content
     {
         #region data
 
-        internal readonly List<TextureContent> _SharedTextures = new List<TextureContent>();
+        public readonly List<TextureContent> _SharedTextures = new List<TextureContent>();
 
-        internal readonly List<MaterialContent> _Materials = new List<MaterialContent>();
+        public readonly List<MaterialContent> _Materials = new List<MaterialContent>();
 
         #endregion
 

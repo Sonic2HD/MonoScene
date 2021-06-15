@@ -1,0 +1,39 @@
+﻿<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj_uwp</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="MSBuild.Sdk.Extras" />
+
+  <PropertyGroup>
+    <TargetFrameworks>uap10.0</TargetFrameworks>
+    <RootNamespace>MonoScene.Graphics</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TargetPlatformVersion>10.0.18362.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>  
+  </PropertyGroup>  
+
+  <Import Project="Sdk.targets" Sdk="MSBuild.Sdk.Extras" />
+
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>MonoScene.Pipeline</_Parameter1>
+    </AssemblyAttribute>    
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsUniversal.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Content\MonoScene.Runtime.Content_UWP.csproj" />
+  </ItemGroup>  
+
+</Project>

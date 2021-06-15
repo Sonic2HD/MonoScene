@@ -15,10 +15,10 @@ namespace MonoScene.Graphics.Content
     {
         #region data        
 
-        internal readonly List<VertexBufferContent> _SharedVertexBuffers = new List<VertexBufferContent>();
-        internal readonly List<IndexBufferContent> _SharedIndexBuffers = new List<IndexBufferContent>();        
+        public readonly List<VertexBufferContent> _SharedVertexBuffers = new List<VertexBufferContent>();
+        public readonly List<IndexBufferContent> _SharedIndexBuffers = new List<IndexBufferContent>();        
 
-        internal readonly List<MeshContent> _Meshes = new List<MeshContent>();
+        public readonly List<MeshContent> _Meshes = new List<MeshContent>();
 
         #endregion
 

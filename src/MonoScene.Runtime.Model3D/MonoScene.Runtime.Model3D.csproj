@@ -4,7 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>MonoScene.Graphics</RootNamespace>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>  
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_uwp\**</DefaultItemExcludes>
+  </PropertyGroup>
 
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
@@ -13,11 +17,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.1922-develop" PrivateAssets="all" />
     <PackageReference Include="System.Memory" Version="4.5.4" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.DesktopGL.csproj" />
     <ProjectReference Include="..\MonoScene.Runtime.Content\MonoScene.Runtime.Content.csproj" />
   </ItemGroup>  
 

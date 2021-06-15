@@ -1,0 +1,28 @@
+﻿<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj_uwp</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="MSBuild.Sdk.Extras" />
+
+  <PropertyGroup>
+    <TargetFrameworks>uap10.0</TargetFrameworks>
+    <RootNamespace>MonoScene.Graphics.Pipeline</RootNamespace>
+  </PropertyGroup>
+
+  <Import Project="Sdk.targets" Sdk="MSBuild.Sdk.Extras" />
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\MonoScene.Pipeline\MonoScene.Pipeline_UWP.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Effects.Classic\MonoScene.Runtime.Effects.Classic_UWP.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Effects.PBR\MonoScene.Runtime.Effects.PBR_UWP.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Model3D\MonoScene.Runtime.Model3D_UWP.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AssimpNet" Version="5.0.0-beta1" />
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.1.1922-develop" PrivateAssets="all" />    
+  </ItemGroup>
+
+</Project>
