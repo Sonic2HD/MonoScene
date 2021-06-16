@@ -9772,7 +9772,6 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
-      "MonoGame.Framework.WindowsUniversal >= 1.0.0",
       "MonoScene.Runtime.Content_UWP >= 1.0.0",
       "MonoScene.Runtime.Effects.Classic_UWP >= 1.0.0",
       "MonoScene.Runtime.Effects.PBR_UWP >= 1.0.0"
@@ -9812,15 +9811,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.16299": {
           "targetAlias": "uap10.0",
           "projectReferences": {
-            "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj": {
-              "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj"
-            },
             "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Runtime.Content\\MonoScene.Runtime.Content_UWP.csproj": {
               "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Runtime.Content\\MonoScene.Runtime.Content_UWP.csproj"
             },

@@ -26,7 +26,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsUniversal.csproj" />
     <ProjectReference Include="..\..\..\SharpGLTF\src\SharpGLTF.Core\SharpGLTF.Core.csproj" />
     <ProjectReference Include="..\MonoScene.Pipeline\MonoScene.Pipeline_UWP.csproj" />
     <ProjectReference Include="..\MonoScene.Runtime.Model3D\MonoScene.Runtime.Model3D_UWP.csproj" />

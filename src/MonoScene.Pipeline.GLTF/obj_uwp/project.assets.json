@@ -460,15 +460,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -491,7 +482,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -565,10 +555,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -1216,15 +1203,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -1247,7 +1225,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -1321,10 +1298,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -1973,15 +1947,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -2004,7 +1969,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -2078,10 +2042,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -2730,15 +2691,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -2761,7 +2713,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -2835,10 +2786,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -3486,15 +3434,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -3517,7 +3456,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -3591,10 +3529,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -4243,15 +4178,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -4274,7 +4200,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -4348,10 +4273,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -4999,15 +4921,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -5030,7 +4943,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -5104,10 +5016,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -5756,15 +5665,6 @@
           "lib/netstandard2.0/System.Threading.Tasks.Extensions.dll": {}
         }
       },
-      "System.ValueTuple/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/uap10.0.16299/_._": {}
-        },
-        "runtime": {
-          "lib/uap10.0.16299/_._": {}
-        }
-      },
       "MonoGame.Framework.WindowsUniversal/1.0.0": {
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
@@ -5787,7 +5687,6 @@
         "type": "project",
         "framework": "UAP,Version=v10.0.16299",
         "dependencies": {
-          "MonoGame.Framework.WindowsUniversal": "1.0.0",
           "MonoScene.Runtime.Content_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.Classic_UWP": "1.0.0",
           "MonoScene.Runtime.Effects.PBR_UWP": "1.0.0"
@@ -5861,10 +5760,7 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "System.Memory": "4.5.4",
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Json": "5.0.2",
-          "System.ValueTuple": "4.5.0"
+          "System.Text.Json": "5.0.2"
         },
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
@@ -10597,50 +10493,6 @@
         "version.txt"
       ]
     },
-    "System.ValueTuple/4.5.0": {
-      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
-      "type": "package",
-      "path": "system.valuetuple/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net461/System.ValueTuple.dll",
-        "lib/net461/System.ValueTuple.xml",
-        "lib/net47/System.ValueTuple.dll",
-        "lib/net47/System.ValueTuple.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.ValueTuple.dll",
-        "lib/netstandard1.0/System.ValueTuple.xml",
-        "lib/netstandard2.0/_._",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net461/System.ValueTuple.dll",
-        "ref/net47/System.ValueTuple.dll",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard2.0/_._",
-        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.valuetuple.4.5.0.nupkg.sha512",
-        "system.valuetuple.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "MonoGame.Framework.WindowsUniversal/1.0.0": {
       "type": "project",
       "path": "../../../MonoGame/MonoGame.Framework/MonoGame.Framework.WindowsUniversal.csproj",
@@ -10680,7 +10532,6 @@
   "projectFileDependencyGroups": {
     "UAP,Version=v10.0.16299": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
-      "MonoGame.Framework.WindowsUniversal >= 1.0.0",
       "MonoScene.Pipeline_UWP >= 1.0.0",
       "MonoScene.Runtime.Model3D_UWP >= 1.0.0",
       "SharpGLTF.Core >= 1.0.0"
@@ -10720,15 +10571,13 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.16299": {
           "targetAlias": "uap10.0",
           "projectReferences": {
-            "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj": {
-              "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj"
-            },
             "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Pipeline\\MonoScene.Pipeline_UWP.csproj": {
               "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Pipeline\\MonoScene.Pipeline_UWP.csproj"
             },

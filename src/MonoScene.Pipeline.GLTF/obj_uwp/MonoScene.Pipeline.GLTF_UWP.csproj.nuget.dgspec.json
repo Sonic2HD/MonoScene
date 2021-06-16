@@ -31,6 +31,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -139,15 +140,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "uap10.0.16299": {
             "targetAlias": "uap10.0",
             "projectReferences": {
-              "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj": {
-                "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj"
-              },
               "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Pipeline\\MonoScene.Pipeline_UWP.csproj": {
                 "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Pipeline\\MonoScene.Pipeline_UWP.csproj"
               },
@@ -236,15 +235,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "uap10.0.16299": {
             "targetAlias": "uap10.0",
             "projectReferences": {
-              "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj": {
-                "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoGame\\MonoGame.Framework\\MonoGame.Framework.WindowsUniversal.csproj"
-              },
               "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Runtime.Content\\MonoScene.Runtime.Content_UWP.csproj": {
                 "projectPath": "C:\\Source\\Sonic2HD\\Sonic2HD\\src\\external\\MonoScene\\src\\MonoScene.Runtime.Content\\MonoScene.Runtime.Content_UWP.csproj"
               },
@@ -333,6 +330,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -425,6 +423,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -520,6 +519,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -611,6 +611,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -705,6 +706,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -740,21 +742,9 @@
               "target": "Package",
               "version": "[1.1.118, )"
             },
-            "System.Memory": {
-              "target": "Package",
-              "version": "[4.5.4, )"
-            },
-            "System.Runtime.CompilerServices.Unsafe": {
-              "target": "Package",
-              "version": "[5.0.0, )"
-            },
             "System.Text.Json": {
               "target": "Package",
               "version": "[5.0.2, )"
-            },
-            "System.ValueTuple": {
-              "target": "Package",
-              "version": "[4.5.0, )"
             }
           },
           "imports": [
