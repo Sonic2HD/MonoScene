@@ -11,9 +11,6 @@ namespace MonoScene.Graphics.Pipeline
     public abstract class TextureFactory<TTexture>
     {
         #region lifecycle
-
-        private object localLoadedSync = new object();
-
         public TextureFactory(GraphicsDevice device)
         {
             _Device = device;            
@@ -40,22 +37,16 @@ namespace MonoScene.Graphics.Pipeline
 
             if (image == null) return null;
 
-            lock (localLoadedSync)
-            {
-                if (_Textures.TryGetValue(image, out Texture2D tex)) return tex;
+            if (_Textures.TryGetValue(image, out Texture2D tex)) return tex;
 
-                tex = ConvertTexture(image);
+            tex = ConvertTexture(image);
 
-                tex.Name = name;
+            tex.Name = name;
 
-                _Textures[image] = tex;
+            _Textures[image] = tex;
 
-                return tex;
-            }
+            return tex;
 
-            
-
-            
         }
 
         protected abstract Texture2D ConvertTexture(TTexture image);

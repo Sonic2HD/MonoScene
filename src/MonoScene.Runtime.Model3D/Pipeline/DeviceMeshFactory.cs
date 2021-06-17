@@ -160,7 +160,7 @@ namespace MonoScene.Graphics.Pipeline
             {
                 var dstMesh = new Mesh(Device);
 
-                Task.WhenAll(srcMesh.Parts.Select(srcPart => Task.Run(() =>
+                foreach(var srcPart in srcMesh.Parts)
                 {
                     var srcMaterial = srcMaterials.Materials[srcPart.MaterialIndex];
 
@@ -173,8 +173,7 @@ namespace MonoScene.Graphics.Pipeline
                     dstPart.Effect = useEffect(srcMaterial, hasSkin);
                     dstPart.Blending = srcMaterial.Mode == MaterialBlendMode.Blend ? BlendState.NonPremultiplied : BlendState.Opaque;
                     dstPart.Geometry = dstGeometry;
-
-                }, default)).ToArray()).GetAwaiter().GetResult();
+                }
 
                 dstMeshes.Add(dstMesh);
             }
