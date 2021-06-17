@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using System.Threading.Tasks;
 using Microsoft.Xna.Framework.Graphics;
 
 using MonoScene.Graphics.Content;
@@ -160,20 +160,21 @@ namespace MonoScene.Graphics.Pipeline
             {
                 var dstMesh = new Mesh(Device);
 
-                foreach(var srcPart in srcMesh.Parts)
+                Task.WhenAll(srcMesh.Parts.Select(srcPart => Task.Run(() =>
                 {
                     var srcMaterial = srcMaterials.Materials[srcPart.MaterialIndex];
 
                     var hasSkin = srcMeshes.SharedVertexBuffers[srcPart.Geometry.VertexBufferIndex].HasSkinning;
 
                     var dstGeometry = MeshTriangles.CreateFrom(srcPart.Geometry, vertexBuffers, indexBuffers);
-                    dstGeometry.SetCullingStates(srcMaterial.DoubleSided);                    
+                    dstGeometry.SetCullingStates(srcMaterial.DoubleSided);
 
                     var dstPart = dstMesh.CreateMeshPart();
                     dstPart.Effect = useEffect(srcMaterial, hasSkin);
                     dstPart.Blending = srcMaterial.Mode == MaterialBlendMode.Blend ? BlendState.NonPremultiplied : BlendState.Opaque;
                     dstPart.Geometry = dstGeometry;
-                }
+
+                }, default)).ToArray()).GetAwaiter().GetResult();
 
                 dstMeshes.Add(dstMesh);
             }
