@@ -19,11 +19,21 @@
 
   <PropertyGroup>
     <DefaultItemExcludes>$(DefaultItemExcludes);obj\**</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_desktopgl\**</DefaultItemExcludes>
   </PropertyGroup>
   
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|uap10.0|AnyCPU'">
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="5.0.2" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\SharpGLTF\src\SharpGLTF.Core\SharpGLTF.Core.csproj" />

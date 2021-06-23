@@ -1,0 +1,32 @@
+﻿<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj_desktopgl</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>Microsoft.Xna.Framework.Graphics</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_uwp\**</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Memory" Version="4.5.4" />
+  </ItemGroup>  
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.DesktopGL.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Effects.Classic\MonoScene.Runtime.Effects.Classic_DesktopGL.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Effects.PBR\MonoScene.Runtime.Effects.PBR_DesktopGL.csproj" />
+  </ItemGroup>
+
+</Project>

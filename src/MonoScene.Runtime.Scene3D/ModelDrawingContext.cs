@@ -137,7 +137,7 @@ namespace Microsoft.Xna.Framework.Graphics
             PushState();
 
             var proj = GetProjectionMatrix();            
-
+             
             foreach (var e in modelInstance.SharedEffects)
             {
                 environment.ApplyTo(e);

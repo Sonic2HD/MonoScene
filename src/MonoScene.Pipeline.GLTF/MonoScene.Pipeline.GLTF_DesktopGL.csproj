@@ -1,0 +1,34 @@
+﻿<Project>
+  <PropertyGroup>
+    <BaseIntermediateOutputPath>obj_desktopgl</BaseIntermediateOutputPath>
+  </PropertyGroup>
+
+  <Import Project="Sdk.props" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <RootNamespace>MonoScene.Graphics.Pipeline</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+  </PropertyGroup>
+
+  <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
+
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_uwp\**</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.DesktopGL.csproj" />
+    <ProjectReference Include="..\..\..\SharpGLTF\src\SharpGLTF.Core\SharpGLTF.Core.csproj" />
+    <ProjectReference Include="..\MonoScene.Pipeline\MonoScene.Pipeline_DesktopGL.csproj" />
+    <ProjectReference Include="..\MonoScene.Runtime.Model3D\MonoScene.Runtime.Model3D_DesktopGL.csproj" />
+  </ItemGroup>
+
+</Project>

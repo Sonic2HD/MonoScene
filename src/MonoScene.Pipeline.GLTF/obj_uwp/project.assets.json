@@ -553,10 +553,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -1296,10 +1293,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -2040,10 +2034,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -2784,10 +2775,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -3527,10 +3515,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -4271,10 +4256,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -5014,10 +4996,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -5758,10 +5737,7 @@
       },
       "SharpGLTF.Core/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
-        "dependencies": {
-          "System.Text.Json": "5.0.2"
-        },
+        "framework": ".NETFramework,Version=v4.6.1",
         "compile": {
           "bin/placeholder/SharpGLTF.Core.dll": {}
         },
@@ -10534,7 +10510,8 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 6.2.9",
       "MonoScene.Pipeline_UWP >= 1.0.0",
       "MonoScene.Runtime.Model3D_UWP >= 1.0.0",
-      "SharpGLTF.Core >= 1.0.0"
+      "SharpGLTF.Core >= 1.0.0",
+      "System.Text.Json >= 5.0.2"
     ]
   },
   "packageFolders": {
@@ -10571,7 +10548,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://teamcity.monogame.net/guestAuth/app/nuget/feed/_Root/default/v3/index.json": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -10605,6 +10581,10 @@
             "target": "Package",
             "version": "[6.2.9, )",
             "autoReferenced": true
+          },
+          "System.Text.Json": {
+            "target": "Package",
+            "version": "[5.0.2, )"
           }
         },
         "imports": [

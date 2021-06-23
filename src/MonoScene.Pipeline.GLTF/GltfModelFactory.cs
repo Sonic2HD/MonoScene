@@ -65,7 +65,7 @@ namespace MonoScene.Graphics.Pipeline
         /// </summary>
         public DeviceModelCollection ReadModel(System.IO.Stream glbModelStream)
         {
-            var model = SharpGLTF.Schema2.ModelRoot.ReadGLB(glbModelStream, SharpGLTF.Validation.ValidationMode.TryFix);
+            var model = SharpGLTF.Schema2.ModelRoot.LoadGLB(glbModelStream, SharpGLTF.Validation.ValidationMode.TryFix);
 
             return ReadModel(model);
         }

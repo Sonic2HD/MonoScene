@@ -1,16 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <RootNamespace>MonoScene.Graphics.Pipeline</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
 
-  <ItemGroup>
-    <None Remove="obj_uwp\**" />
-  </ItemGroup>
+  <PropertyGroup>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj\**</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_desktopgl\**</DefaultItemExcludes>
+  </PropertyGroup>
+
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.DesktopGL.csproj" />
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsDX.csproj" />
     <ProjectReference Include="..\MonoScene.Runtime.Content\MonoScene.Runtime.Content.csproj" />
     <ProjectReference Include="..\MonoScene.Runtime.Effects.Classic\MonoScene.Runtime.Effects.Classic.csproj" />
     <ProjectReference Include="..\MonoScene.Runtime.Effects.PBR\MonoScene.Runtime.Effects.PBR.csproj" />

@@ -1,12 +1,14 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
 
   <PropertyGroup>
     <DefaultItemExcludes>$(DefaultItemExcludes);obj_uwp\**</DefaultItemExcludes>
+    <DefaultItemExcludes>$(DefaultItemExcludes);obj_desktopgl\**</DefaultItemExcludes>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.DesktopGL.csproj" />
+    <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsDX.csproj" />
     <ProjectReference Include="..\MonoScene.Runtime.Model3D\MonoScene.Runtime.Model3D.csproj" />
   </ItemGroup>
 
