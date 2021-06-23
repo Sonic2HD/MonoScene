@@ -26,6 +26,8 @@
 *.csproj.csdat
 ipch/
 obj/
+obj_desktopgl/
+obj_uwp/
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
