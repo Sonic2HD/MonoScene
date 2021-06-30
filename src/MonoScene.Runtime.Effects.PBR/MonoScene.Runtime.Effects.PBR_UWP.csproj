@@ -14,8 +14,8 @@
     <AssemblyName>MonoScene.Runtime.Effects.PBR_UWP</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
-    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.16299.0</TargetPlatformVersion>
-    <TargetPlatformMinVersion>10.0.16299.0</TargetPlatformMinVersion>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.19041.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
     <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -153,17 +153,12 @@
       <Version>6.2.12</Version>
     </PackageReference>
   </ItemGroup>
-
-
-
   <ItemGroup>
     <None Remove="Effects\Shaders\Resources\*.mgfxo" />
   </ItemGroup>
-
   <ItemGroup>
     <EmbeddedResource Include="Effects\Shaders\Resources\*.mgfxo" />
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Effects\Shaders\Techniques.PBR.Old.tt">
       <LastGenOutput>Techniques.PBR.Old.fx</LastGenOutput>
@@ -175,7 +170,6 @@
       <AutoGen>True</AutoGen>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Effects\Shaders\Techniques.Unlit.Old.tt">
       <LastGenOutput>Techniques.Unlit.Old.fx</LastGenOutput>
@@ -187,7 +181,6 @@
       <AutoGen>True</AutoGen>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Effects\Shaders\VertexShadersStructs.tt">
       <LastGenOutput>VertexShadersStructs.fx</LastGenOutput>
@@ -199,7 +192,6 @@
       <AutoGen>True</AutoGen>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Effects\Shaders\VertexShadersCode.tt">
       <LastGenOutput>VertexShadersCode.fx</LastGenOutput>
@@ -211,7 +203,6 @@
       <AutoGen>True</AutoGen>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Effects\Shaders\Techniques.Unlit.tt">
       <LastGenOutput>Techniques.Unlit.fx</LastGenOutput>
@@ -223,7 +214,6 @@
       <AutoGen>True</AutoGen>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <None Update="Effects\Shaders\Techniques.PBR.tt">
       <LastGenOutput>Techniques.PBR.fx</LastGenOutput>
@@ -235,7 +225,6 @@
       <AutoGen>True</AutoGen>
     </None>
   </ItemGroup>
-
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
