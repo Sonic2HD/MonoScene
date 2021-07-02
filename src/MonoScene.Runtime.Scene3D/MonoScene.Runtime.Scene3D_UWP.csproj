@@ -113,7 +113,7 @@
     <OutputPath>bin\x64\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
-    <DebugType>full</DebugType>
+    <DebugType>embedded</DebugType>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <LangVersion>7.3</LangVersion>
@@ -148,6 +148,10 @@
     <ProjectReference Include="..\..\..\MonoGame\MonoGame.Framework\MonoGame.Framework.WindowsUniversal.csproj">
       <Project>{ebad05d5-b120-4703-92d8-f46c12d1c132}</Project>
       <Name>MonoGame.Framework.WindowsUniversal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MonoScene.Runtime.Content\MonoScene.Runtime.Content_UWP.csproj">
+      <Project>{51A94DB1-404F-429B-A053-94A632E02871}</Project>
+      <Name>MonoScene.Runtime.Content_UWP</Name>
     </ProjectReference>
     <ProjectReference Include="..\MonoScene.Runtime.Effects.PBR\MonoScene.Runtime.Effects.PBR_UWP.csproj">
       <Project>{33f4eaea-18de-4549-a493-699fa92a8929}</Project>

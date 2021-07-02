@@ -75,12 +75,32 @@ namespace MonoScene.Graphics
 
             device.BlendState = _Blend;            
 
-            foreach(var pass in _Effect.CurrentTechnique.Passes)
-            {
-                pass.Apply();
 
-                _Geometry.Draw(device);
-            }            
+            if(_Parent._Effects.Count != 0)
+            {
+                foreach (var effect in _Parent._Effects)
+                {
+                    foreach (var pass in effect.CurrentTechnique.Passes)
+                    {
+                        pass.Apply();
+
+                        _Geometry.Draw(device);
+                    }
+                }
+            }
+            else
+            {
+                foreach (var pass in _Effect.CurrentTechnique.Passes)
+                {
+                    pass.Apply();
+
+                    _Geometry.Draw(device);
+                }
+
+            }
+
+
+
         }
 
         #endregion

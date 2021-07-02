@@ -12,7 +12,7 @@ namespace MonoScene.Graphics
     /// </para>
     /// </remarks>
     [System.Diagnostics.DebuggerDisplay("{Content.Name} {Content.MeshIndex}")]
-    public readonly struct DrawableInstance
+    public struct DrawableInstance
     {
         internal DrawableInstance(Content.DrawableContent content)
         {
@@ -23,7 +23,7 @@ namespace MonoScene.Graphics
         /// <summary>
         /// Defines "what to draw".
         /// </summary>
-        public readonly Content.DrawableContent Content;
+        public Content.DrawableContent Content;
 
         /// <summary>
         /// Defines "where to draw it".

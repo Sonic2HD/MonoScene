@@ -32,7 +32,7 @@ namespace MonoScene.Graphics
         private readonly List<MeshPart> _Primitives = new List<MeshPart>();
 
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
-        private IReadOnlyList<Effect> _Effects;
+        public List<Effect> _Effects = new List<Effect>();
 
         [System.Diagnostics.DebuggerBrowsable(System.Diagnostics.DebuggerBrowsableState.Never)]
         private IReadOnlyList<MeshPart> _OpaquePrimitives;
@@ -132,14 +132,20 @@ namespace MonoScene.Graphics
         {
             _GraphicsDevice.DepthStencilState = DepthStencilState.Default;
 
-            foreach (var part in GetOpaqueParts()) part.Draw(_GraphicsDevice);
+            foreach (var part in GetOpaqueParts())
+            {
+                part.Draw(_GraphicsDevice);
+            }
         }
 
         public void DrawTranslucid()
         {
             _GraphicsDevice.DepthStencilState = DepthStencilState.DepthRead;
 
-            foreach (var part in GetTranslucidParts()) part.Draw(_GraphicsDevice);
+            foreach (var part in GetTranslucidParts())
+            {
+                part.Draw(_GraphicsDevice);
+            }
         }
 
         public IEnumerator<MeshPart> GetEnumerator() { return _Primitives.GetEnumerator(); }

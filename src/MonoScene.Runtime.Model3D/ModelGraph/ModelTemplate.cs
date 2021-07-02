@@ -61,7 +61,7 @@ namespace MonoScene.Graphics
             }
         }
 
-        public IReadOnlyCollection<Effect> SharedEffects
+        public IReadOnlyList<Effect> SharedEffects
         {
             get
             {

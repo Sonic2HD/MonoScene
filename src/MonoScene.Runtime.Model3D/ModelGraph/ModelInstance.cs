@@ -44,7 +44,7 @@ namespace MonoScene.Graphics
 
         #region data        
 
-        private readonly ModelTemplate _Parent;        
+        public readonly ModelTemplate _Parent;        
 
         private XNAMAT _WorldMatrix;
 
@@ -94,6 +94,8 @@ namespace MonoScene.Graphics
         /// which might be shared with other <see cref="ModelInstance"/> objects.
         /// </summary>
         public IEnumerable<Effect> SharedEffects => _Parent.SharedEffects;
+        public List<Effect> OpaqueEffects { get; set; } = new List<Effect>();
+        public List<Effect> TranslucidEffects { get; set; } = new List<Effect>();
 
         #endregion
 

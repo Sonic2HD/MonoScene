@@ -132,7 +132,7 @@ namespace Microsoft.Xna.Framework.Graphics
         /// Rendering models one by one is accepted, but some features like translucent parts sortings will not work
         /// unless you manually render the models in the correct order.
         /// </remarks>
-        public void DrawModelInstance(PBREnvironment environment, ModelInstance modelInstance)
+        public void DrawModelInstance(PBREnvironment environment, ModelInstance modelInstance, List<Effect> effects = null)
         {
             PushState();
 
@@ -144,10 +144,28 @@ namespace Microsoft.Xna.Framework.Graphics
                 ModelInstance.UpdateProjViewTransforms(e, proj, _View);
             }
 
+
+            foreach (var d in modelInstance.DrawableInstances)
+            {
+                var mesh = modelInstance._Parent.Meshes[d.Content.MeshIndex];
+                mesh._Effects.Clear();
+            }
+
+            if(effects != null)
+            {
+                foreach (var d in modelInstance.DrawableInstances)
+                {
+                    var mesh = modelInstance._Parent.Meshes[d.Content.MeshIndex];
+                    mesh._Effects.AddRange(effects);
+                }
+            }
+
+
             modelInstance.DrawAllParts(proj, _View);
 
             PopState();
         }
+
 
         /// <summary>
         /// Draws a batch of model instances.
@@ -163,7 +181,7 @@ namespace Microsoft.Xna.Framework.Graphics
         ///   drawing call.
         /// - Possibility to add shadows, where some instances cast shadows over others.
         /// </remarks>
-        public void DrawSceneInstances(PBREnvironment environment, params ModelInstance[] modelInstances)
+        public void DrawSceneInstances(PBREnvironment environment, ModelInstance[] modelInstances, List<Effect> effects = null)
         {
             PushState();
 
@@ -194,6 +212,27 @@ namespace Microsoft.Xna.Framework.Graphics
 
             foreach (var instance in _SceneInstances)
             {
+                foreach (var d in instance.DrawableInstances)
+                {
+                    var mesh = instance._Parent.Meshes[d.Content.MeshIndex];
+                    mesh._Effects.Clear();
+                }
+
+                if (effects != null)
+                {
+                    foreach (var d in instance.DrawableInstances)
+                    {
+                        var mesh = instance._Parent.Meshes[d.Content.MeshIndex];
+                        mesh._Effects.AddRange(effects);
+                    }
+                }
+            }
+            
+
+            foreach (var instance in _SceneInstances)
+            {
+                
+
                 foreach (var e in instance.SharedEffects) environment.ApplyTo(e);
                 instance.DrawOpaqueParts();
             }

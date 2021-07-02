@@ -121,7 +121,7 @@
     <OutputPath>bin\x64\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
     <NoWarn>;2008</NoWarn>
-    <DebugType>full</DebugType>
+    <DebugType>embedded</DebugType>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <ErrorReport>prompt</ErrorReport>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
