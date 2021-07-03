@@ -196,7 +196,38 @@ namespace MonoScene.Graphics
             {
                 UpdateWorldTransforms(effect, worldXform, meshSkinMatrices);
             }
-        }        
+
+
+            if(meshSkinMatrices != null)
+            {
+                foreach (var d in DrawableInstances)
+                {
+                    var mesh = _Parent.Meshes[d.Content.MeshIndex];
+
+                    foreach (var effect in mesh._Effects)
+                    {
+                        bool hasBones = false;
+                        foreach (var parameter in effect.Parameters)
+                        {
+                            if (parameter.Name == "BoneTransforms")
+                            {
+                                hasBones = true;
+                                break;
+                            }
+                        }
+
+                        if (hasBones)
+                        {
+                            effect.Parameters["BoneTransforms"].SetValue(meshSkinMatrices);
+                        }
+                    }
+
+
+                }
+
+            }
+
+        }
 
         #endregion
 
