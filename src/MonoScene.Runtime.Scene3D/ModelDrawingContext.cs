@@ -30,7 +30,7 @@ namespace Microsoft.Xna.Framework.Graphics
 
         private readonly Stack<_GraphicsState> _PreserveState = new Stack<_GraphicsState>();
 
-        private float _FieldOfView = MathHelper.PiOver4;
+        private float _FieldOfView = MathHelper.Pi / 3.0f;
         private float _NearPlane = 1f;
         
         private Matrix _View, _Projection;
