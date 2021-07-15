@@ -146,6 +146,8 @@ namespace MonoScene.Graphics.Pipeline
 
                 dict[srcMaterial] = effect;
 
+                effect.Name = srcMaterial.Name;
+
                 _Disposables.AddDisposable(effect);
                 return effect;
             }
